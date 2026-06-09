@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  font-family: Syne;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0f;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+@font-face {
+  font-family: Syne;
+  src: url(./8vIH7w4qzmVxm2BL9A.woff2);
+}
+@font-face {
+  font-family: dmsam;
+  src: url(./rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2);
+}
+nav h1 {
+  color: white;
+  font-weight: 800;
+  /* padding: 20px 100px; */
+  font-size: 24px;
+  position: relative;
+}
+
+nav h1:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: yellow;
+  display: block;
+  transition: 0.3s;
+}
+nav h1:hover::after {
+  width: 100%;
+}
+nav h1 span {
+  color: rgb(232, 255, 71);
+}
+nav ul li {
+  list-style: none;
+  color: rgb(240, 240, 245);
+}
+nav ul {
+  font-family: dmsam;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-evenly;
+  font-weight: 400;
+  padding: 30px 0px;
+  font-size: 14px;
+}
+nav ul li {
+  position: relative;
+  opacity: 0.6;
+}
+nav {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+nav ul li:hover {
+  opacity: 1;
+}
+nav ul li::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: yellow;
+  display: block;
+  transition: 0.3s;
+}
+nav ul li:hover::after {
+  width: 100%;
+}
+.text {
+  color: rgb(232, 255, 71);
+  border-right: 2px solid rgb(232, 255, 71);
+  white-space: nowrap;
+  animation: text-anim 1.5s infinite steps(15) alternate;
+  overflow: hidden;
+}
+
+@keyframes text-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 800px;
+  }
+}
+section {
+  color: white;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 68px;
+}
+section h3 {
+  color: rgb(232, 255, 71);
+}
+section h1,
+h2 {
+  font-size: 56px;
+  font-weight: 800;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.right p {
+  color: rgba(240, 240, 245, 0.719);
+  font-size: 18px;
+  line-height: 32px;
+}
+.right button {
+  color: rgb(240, 240, 245);
+  width: max-content;
+  padding: 20px 20px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+.right .button1 {
+  color: black;
+  border: hidden;
+  background-color: rgb(232, 255, 71);
+  font-weight: 600;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.right .button1:hover {
+  transform: translateY(-10%);
+  box-shadow: 0px 7px 20px 1px rgb(232, 255, 71);
+}
+.right .button2 {
+  overflow: hidden;
+  font-weight: 600;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  border: hidden;
+  border: 1px solid rgba(240, 240, 245, 0.719);
+  transition: 0.6s;
+}
+.right .button2:hover {
+  transform: translateY(-10%);
+  color: rgb(232, 255, 71);
+  box-shadow: 0px 7px 20px 1px rgb(232, 255, 71);
+}
+.right .button2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  overflow: hidden;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  background-color: rgba(240, 240, 245, 0.164);
+}
+.right .button2:hover::after {
+  left: 0;
+}
+.left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  padding: 30px 50px;
+  height: 100%;
+  text-align: center;
+  width: 70%;
+  border: 1px grey solid;
+  margin: 10px 0px;
+  font-size: 25px;
+  border-radius: 15px;
+  background-color: rgb(15, 2, 15);
+  transition: 0.2s;
+}
+.one:hover {
+  margin-right: 10px;
+  border: 1px yellow solid;
+}
+.two:hover {
+  margin-right: 10px;
+  border: 1px yellow solid;
+}
+.two {
+  font-size: 25px;
+  padding: 30px 50px;
+  height: 100%;
+  text-align: center;
+  margin: 10px 0px;
+  width: 70%;
+  transition: 0.3s;
+  border: 1px grey solid;
+  background-color: rgb(15, 2, 15);
+  border-radius: 15px;
+}
+.three {
+  /* border: yellow 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+  width: 80%;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.three img {
+  border-radius: 15px;
+  width: 100%;
+  transition: 0.5s;
+}
+.three img:hover {
+  scale: 1.1;
+}
+.scroll::after {
+  content: "";
+
+  width: 100%;
+  overflow: hidden;
+  height: 6%;
+  position: absolute;
+  border-bottom: 2px solid rgb(232, 255, 71);
+  top: 40%;
+  left: 50px;
+  animation: leftright 1s alternate infinite;
+}
+.scroll {
+  width: max-content;
+  position: relative;
+}
+@keyframes leftright {
+  from {
+    border-bottom: 2px solid rgba(240, 240, 245, 0.719);
+  }
+  to {
+    border-bottom: 2px solid rgb(232, 255, 71);
+  }
+}
