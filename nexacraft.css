@@ -5,11 +5,14 @@
   padding: 0;
   background-color: #0a0a0f;
 }
-html,
+/* html,
 body {
   width: 100%;
   height: 100%;
-}
+} */
+ section{
+    width: 100%;
+ }
 @font-face {
   font-family: Syne;
   src: url(./8vIH7w4qzmVxm2BL9A.woff2);
@@ -98,7 +101,7 @@ nav ul li:hover::after {
     width: 0;
   }
   to {
-    width: 800px;
+    width: 820px;
   }
 }
 section {
@@ -107,7 +110,6 @@ section {
   gap: 100px;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 68px;
 }
 section h3 {
   color: rgb(232, 255, 71);
@@ -120,6 +122,8 @@ h2 {
 .right {
   display: flex;
   flex-direction: column;
+  padding: 50px 68px;
+
   gap: 50px;
 }
 .right p {
@@ -178,7 +182,7 @@ h2 {
   left: 0;
 }
 .left {
-  width: 30%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,7 +249,7 @@ h2 {
   border-bottom: 2px solid rgb(232, 255, 71);
   top: 40%;
   left: 50px;
-  animation: leftright 1s alternate infinite;
+  animation: leftright 0.5s alternate infinite;
 }
 .scroll {
   width: max-content;
@@ -258,4 +262,43 @@ h2 {
   to {
     border-bottom: 2px solid rgb(232, 255, 71);
   }
+}
+.sliderparent {
+ margin-top: 50px;
+    width: 100%;
+  height: max-content;
+  overflow: hidden;
+}
+.content {
+    color: rgba(240, 240, 245, 0.719);
+    padding: 30px 20px;
+    font-weight: 400;
+    font-family: syne;
+    font-size: 16;
+    line-height: 26px;
+    background-color: rgb(25, 24, 24);
+}
+.content p{
+    background-color: rgb(25, 24, 24);
+    
+}
+.content span{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(25, 24, 24);
+color: rgb(232, 255, 71);
+
+}
+.slider {
+    width: 300%;
+  animation: slider 25s reverse infinite linear;
+}
+@keyframes slider {
+    from{
+        margin-left: -100%;
+    }
+    to{
+        
+        margin-left: 0%;
+    }
 }
