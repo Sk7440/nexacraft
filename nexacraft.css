@@ -389,10 +389,6 @@ i {
 
   width: 100%;
 }
-.intro-container {
-  padding: 80px 20px;
-  text-align: center;
-}
 
 .highlight {
   color: #ffcc00;
@@ -433,26 +429,26 @@ i {
 .gallery-card:nth-child(1) {
   grid-column: 1 / 3;
   grid-row: 1 / 4;
-} 
- .gallery-card:nth-child(2) {
+}
+.gallery-card:nth-child(2) {
   grid-column: 3 / 4;
   grid-row: 1 / 4;
 }
 
-.gallery-card{
+.gallery-card {
   position: relative;
   top: 0;
   width: 98%;
   margin-top: 20px;
   left: 0;
   display: flex;
-gap: 20px;
+  gap: 20px;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
 }
 .gallery-card:nth-child(3) {
-  grid-column: 1/ 3 ;
+  grid-column: 1/ 3;
   grid-row: 4 / 6;
 }
 .gallery-card:nth-child(4) {
@@ -517,8 +513,10 @@ gap: 20px;
   position: absolute;
   top: 0;
   border-radius: 20px;
+  padding: 20px;
   left: 0;
-  background-color: pink;
+  
+  background:linear-gradient(pink,blue);
   transform: rotateY(-180deg);
 }
 .back h2 {
@@ -537,6 +535,63 @@ gap: 20px;
 
 .main-box:hover .box {
   transform: rotateY(180deg);
+}
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 100px 0px;
+}
+.img-1 {
+  border-radius: 30px;
+  object-fit: cover;
+  margin: 20px;
+  width: 450px;
+  height: 430px;
+}
+.img-2 {
+  position: absolute;
+  top: 40%;
+  border-radius: 30px;
+  left: 15%;
+  width: 350px;
+  height: 330px;
+  object-fit: cover;
+}
+.intro-container span {
+  color: rgb(232, 255, 71);
+}
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro-container button {
+  align-self: flex-start;
+  margin-left: 230px;
+}
+.intro-container p {
+  line-height: 2;
+  margin: 20px 0px;
+}
+.metrics-container {
+  color: white;
+  display: flex;
+  gap: 40px;
+  margin: 20px;
+  padding: 20px;
+  border-top: gray 1px solid;
+  border-bottom: gray 1px solid;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.team-section {
+  padding: 100px 0px;
+}
+.team-section p {
+  color: white;
 }
 @media screen and (max-width: 1024px) {
   .left {
