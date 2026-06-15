@@ -593,6 +593,62 @@ i {
 .team-section p {
   color: white;
 }
+.lft-side p{
+  color: rgb(232, 255, 71);
+}
+.lft-side li{
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.lft-side ul li div{
+  display: flex;
+  padding: 15px;
+  width: max-content;
+  border: 2px solid rgb(232, 255, 71);
+  border-radius: 20%;
+}
+
+.lft-side ul{
+  gap: 20px;
+  list-style: none;
+  display: flex;  
+  flex-direction: column;
+}
+.lft-side{
+  color: white;
+  padding: 50px;
+}
+.inp-parent{
+  position: relative;
+  margin: 50px;
+}
+input{
+  width: 200px;
+  height: 40px;
+}
+.above-footer{
+  display: flex;
+}
+.input{
+  
+}
+label{
+  background-color: white;
+  padding: 5px;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+  input:focus~label,
+  input:not(:placeholder-shown)~label 
+  {
+    text-transform: uppercase;
+    top: -15px;
+  }
 @media screen and (max-width: 1024px) {
   .left {
     display: none;
@@ -613,28 +669,3 @@ i {
   }
 }
 
-/* .inp-parent{
-  position: relative;
-  margin: 50px;
-}
-input{
-  width: 200px;
-  height: 40px;
-}
-
-
-label{
-  background-color: white;
-  padding: 5px;
-  position: absolute;
-  top: 5px;
-  left: 15px;
-  transition: 0.3s;
-  pointer-events: none;
-}
-  input:focus~label,
-  input:not(:placeholder-shown)~label 
-  {
-    text-transform: uppercase;
-    top: -15px;
-  } */
