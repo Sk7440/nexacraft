@@ -622,32 +622,59 @@ i {
 }
 .inp-parent{
   position: relative;
-  margin: 50px;
 }
-input{
-  width: 200px;
-  height: 40px;
-}
+
 .above-footer{
   display: flex;
 }
 .input{
-  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  border: 2px solid yellow;
+}
+.input input{
+  background-color: rgb(25, 24, 24);
+  color: white;
+  border: hidden;
+  width: 100%;
+  padding: 20px;
 }
 label{
-  background-color: white;
   padding: 5px;
+  
   position: absolute;
-  top: 5px;
+  top: 12px;
   left: 15px;
   transition: 0.3s;
   pointer-events: none;
+  color:grey;
+  background-color: rgba(25,24,24);
 }
-  input:focus~label,
-  input:not(:placeholder-shown)~label 
+textarea{
+  transition: 0.3s;
+  width: 90%;
+  color:grey;
+  background-color: rgba(25,24,24);
+
+}
+ 
+  textarea:focus~label,
+  textarea:not(:placeholder-shown)~label
   {
-    text-transform: uppercase;
     top: -15px;
+    color: rgb(232, 255, 71);
+  }
+  input:focus~label,
+  input:not(:placeholder-shown)~label
+  {
+    top: -15px;
+    color: rgb(232, 255, 71);
+  }
+  input:focus{
+    border: 2px yellow solid;
+
   }
 @media screen and (max-width: 1024px) {
   .left {
