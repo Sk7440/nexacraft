@@ -50,11 +50,11 @@ nav h1:hover::after {
 nav h1 span {
   color: rgb(232, 255, 71);
 }
-nav ul li {
+ ul li {
   list-style: none;
   color: rgb(240, 240, 245);
 }
-nav ul {
+ ul {
   font-family: dmsam;
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@ nav ul {
   padding: 30px 0px;
   font-size: 14px;
 }
-nav ul li {
+ ul li {
   position: relative;
   opacity: 0.6;
 }
@@ -75,10 +75,10 @@ nav {
   justify-content: space-between;
   padding: 0px 100px;
 }
-nav ul li:hover {
+ul li:hover {
   opacity: 1;
 }
-nav ul li::after {
+ul li::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -89,7 +89,7 @@ nav ul li::after {
   display: block;
   transition: 0.3s;
 }
-nav ul li:hover::after {
+ ul li:hover::after {
   width: 100%;
 }
 .text {
@@ -515,8 +515,8 @@ i {
   border-radius: 20px;
   padding: 20px;
   left: 0;
-  
-  background:linear-gradient(pink,blue);
+
+  background: linear-gradient(pink, blue);
   transform: rotateY(-180deg);
 }
 .back h2 {
@@ -593,16 +593,15 @@ i {
 .team-section p {
   color: white;
 }
-.lft-side p{
+.lft-side p {
   color: rgb(232, 255, 71);
 }
-.lft-side li{
-
+.lft-side li {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.lft-side ul li div{
+.lft-side ul li div {
   display: flex;
   padding: 15px;
   width: max-content;
@@ -610,72 +609,112 @@ i {
   border-radius: 20%;
 }
 
-.lft-side ul{
+.lft-side ul {
   gap: 20px;
   list-style: none;
-  display: flex;  
+  display: flex;
   flex-direction: column;
 }
-.lft-side{
+.lft-side {
   color: white;
   padding: 50px;
 }
-.inp-parent{
+.inp-parent {
   position: relative;
 }
 
-.above-footer{
+.above-footer {
   display: flex;
 }
-.input{
+.input {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100%;
-  border: 2px solid yellow;
+  width: 40%;
+  margin: 60px;
 }
-.input input{
+.input input {
   background-color: rgb(25, 24, 24);
   color: white;
   border: hidden;
   width: 100%;
+  border-radius: 20px;
   padding: 20px;
 }
-label{
+label {
   padding: 5px;
-  
+
   position: absolute;
   top: 12px;
   left: 15px;
   transition: 0.3s;
   pointer-events: none;
-  color:grey;
-  background-color: rgba(25,24,24);
+  color: grey;
+  background-color: rgba(25, 24, 24);
 }
-textarea{
+.input button {
+  background-color: rgb(232, 255, 71);
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  width: 100%;
+}
+textarea {
+  border-radius: 20px;
   transition: 0.3s;
-  width: 90%;
-  color:grey;
-  background-color: rgba(25,24,24);
-
+  width: 100%;
+  color: grey;
+  background-color: rgba(25, 24, 24);
 }
- 
-  textarea:focus~label,
-  textarea:not(:placeholder-shown)~label
-  {
-    top: -15px;
-    color: rgb(232, 255, 71);
-  }
-  input:focus~label,
-  input:not(:placeholder-shown)~label
-  {
-    top: -15px;
-    color: rgb(232, 255, 71);
-  }
-  input:focus{
-    border: 2px yellow solid;
+select {
+  font-size: 16px;
+  width: 100%;
+  border-radius: 20px;
+  color: grey;
+  padding: 20px;
+  background-color: rgba(25, 24, 24);
+}
+select option {
+  font-size: 16px;
+  width: 100%;
+  border-radius: 20px;
+  color: grey;
+  padding: 20px;
+  background-color: rgba(25, 24, 24);
+}
+textarea:focus ~ label,
+textarea:not(:placeholder-shown) ~ label {
+  top: -15px;
+  color: rgb(232, 255, 71);
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -15px;
+  color: rgb(232, 255, 71);
+}
+input:focus {
+  border: 2px yellow solid;
+}
+footer nav p {
+  color: white;
+  font-size: 16px;
+}
 
-  }
+footer nav ul li {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: gray;
+  transition: 0.6s;
+  border: 2px solid yellow;
+}
+footer nav ul li:hover {
+  background-color: rgb(232, 255, 71);
+}
+footer nav ul li:hover::after{
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   .left {
     display: none;
@@ -695,4 +734,3 @@ textarea{
     width: 45%;
   }
 }
-
